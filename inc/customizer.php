@@ -87,8 +87,9 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 					'settings'    => 'understrap_bootstrap_version',
 					'type'        => 'select',
 					'choices'     => array(
-						'bootstrap4' => __( 'Bootstrap 4', 'understrap' ),
 						'bootstrap5' => __( 'Bootstrap 5', 'understrap' ),
+						'bootstrap4' => __( 'Bootstrap 4', 'understrap' ),
+						
 					),
 					'priority'    => apply_filters( 'understrap_bootstrap_version_priority', 10 ),
 				)
