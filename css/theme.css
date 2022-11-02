@@ -17103,6 +17103,12 @@ figure.woocommerce-product-gallery__wrapper {
   margin: 20px 0;
 }
 
+.home article {
+  margin-bottom: 80px;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 30px;
+}
+
 .entry-content p, .entry-content ul, .entry-content ol {
   font-size: 1.3rem;
 }
@@ -17205,6 +17211,18 @@ blockquote .author {
   width: 250px;
   display: block;
   margin: 20px auto;
+}
+
+.card {
+  border-radius: 0;
+  border-color: #023047;
+  height: 100px;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  box-shadow: 6px 6px #efefef;
 }
 
 /*# sourceMappingURL=theme.css.map */

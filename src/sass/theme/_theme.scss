@@ -17,6 +17,12 @@
 	margin: 20px 0;
 }
 
+.home article {
+	margin-bottom: 80px;
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 30px;
+}
+
 .entry-content p, .entry-content ul, .entry-content ol{
 	font-size: 1.3rem;
 }
@@ -119,4 +125,15 @@ color: #fff;
 	width: 250px;
 	display: block;
 	margin: 20px auto;
+}
+
+.card {
+	border-radius: 0;
+	border-color: $primary;
+	height: 100px;	
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 6px 6px #efefef;
 }
