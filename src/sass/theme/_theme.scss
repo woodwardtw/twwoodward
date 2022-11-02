@@ -1,11 +1,13 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
+.entry-content {
+	margin: 80px 0;
+}
 
-/*
-Welcome to Custom CSS!
+.entry-content p, .entry-content ul, .entry-content ol{
+	font-size: 1.3rem;
+}
 
-To learn how this works, see http://wp.me/PEmnE-Bt
-*/
 .highlight, mark, .hl {
 	padding: 2px 6px;
 	color: #023d5a;
@@ -97,4 +99,11 @@ color: #fff;
 
 .copyright {
 	display: none;
+}
+
+.btn-tww {
+	border-radius: 50px;
+	width: 250px;
+	display: block;
+	margin: 20px auto;
 }

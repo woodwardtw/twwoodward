@@ -44,3 +44,13 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
+
+
+function tww_activity_link(){
+	global $post;
+	//activity_link
+	if (get_post_meta($post->ID, 'activity_link', true)){
+		$link = get_post_meta($post->ID, 'activity_link', true);
+		echo "<a class='btn btn-primary btn-tww' href='{$link}'>See more</a>";
+	}
+}
