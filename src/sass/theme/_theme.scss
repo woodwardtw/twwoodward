@@ -129,8 +129,10 @@ color: #fff;
 
 .card {
 	border-radius: 0;
+	margin: 10px 0;
 	border-color: $primary;
-	height: 100px;	
+	height: 130px;	
+	transition: all .5s ease;
 }
 
 .card:hover {
