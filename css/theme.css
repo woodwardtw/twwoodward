@@ -17087,8 +17087,20 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
+#wrapper-navbar {
+  margin-bottom: 70px;
+}
+
+#right-sidebar {
+  padding-left: 50px;
+}
+
 .entry-content {
   margin: 80px 0;
+}
+
+.home .entry-content {
+  margin: 20px 0;
 }
 
 .entry-content p, .entry-content ul, .entry-content ol {
@@ -17188,7 +17200,7 @@ blockquote .author {
   display: none;
 }
 
-.btn-tww {
+.btn-tww, .understrap-read-more-link {
   border-radius: 50px;
   width: 250px;
   display: block;
