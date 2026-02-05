@@ -35,6 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 					</header><!-- .page-header -->
+
 					<?php
 					// Start the loop.
 					while ( have_posts() ) {
@@ -44,8 +45,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 						 * Include the Post-Format-specific template for the content.
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 * For custom post types, check the post type first.
 						 */
-						get_template_part( 'loop-templates/content', get_post_format() );
+						$post_type = get_post_type();
+						$post_format = get_post_format();
+						
+						if ( $post_type && 'post' !== $post_type ) {
+							// For custom post types, try to load content-{post_type}.php
+							get_template_part( 'loop-templates/content', $post_type );
+						} else {
+							// For regular posts, use the post format
+							get_template_part( 'loop-templates/content', $post_format );
+						}
 					}
 				} else {
 					get_template_part( 'loop-templates/content', 'none' );
